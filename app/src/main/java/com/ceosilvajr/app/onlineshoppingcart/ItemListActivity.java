@@ -1,16 +1,39 @@
 package com.ceosilvajr.app.onlineshoppingcart;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
+import android.widget.Switch;
 
 public class ItemListActivity extends AppCompatActivity {
+
+    private LinearLayout mLLLebronVIIContainer;
+    private LinearLayout mLLLebronVIIIIContainer;
+    private LinearLayout mLLLebronXContainer;
+
+    private Switch mSWLebronVII;
+    private Switch mSWLebronVIIII;
+    private Switch mSWLebronX;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_list);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        toolbar.inflateMenu(R.menu.menu_item_list);
+
+        initViews();
+    }
+
+    private void initViews() {
+
     }
 
     @Override
@@ -28,10 +51,17 @@ public class ItemListActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_cart) {
+            Intent intent = new Intent(ItemListActivity.this, CheckoutActivity.class);
+            startActivity(intent);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        //set alert dialog box
     }
 }

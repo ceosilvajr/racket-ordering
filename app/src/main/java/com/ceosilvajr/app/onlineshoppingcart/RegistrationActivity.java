@@ -21,6 +21,7 @@ public class RegistrationActivity extends AppCompatActivity {
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         // Set an OnMenuItemClickListener to handle menu item clicks
         toolbar.setNavigationOnClickListener(mToolbarBackClicked);
+
     }
 
     private View.OnClickListener mToolbarBackClicked = new View.OnClickListener() {

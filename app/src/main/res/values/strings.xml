@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Online Shopping Cart</string>
+    <string name="app_name">Lebron Shoes Online</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -18,5 +18,16 @@
     <string name="title_activity_checkout">Checkout</string>
     <string name="title_activity_registration">Register</string>
     <string name="username">Username</string>
+    <string name="cart">Cart</string>
+
+    <string name="paypal">Paypal</string>
+    <string name="paypal_message">Pay using Paypal account. You will be redirected to the Paypal system to complete the payment.</string>
+    <string name="credit_debit">Credit / Debit card</string>
+    <string name="credi_cards">Saved Credit Card(s)</string>
+    <string name="cash_delivery">Cash On Delivery</string>
+    <string name="cash_delivery_message">Pay upon receiving your goods from the comfort of your home, workplace or any shipping destination of your choice.</string>
+    <string name="payment_message">Processing your payment.</string>
+    <string name="thank_you">Successful payment. Thank you for shopping with us.</string>
+    <string name="total">TOTAL</string>
 
 </resources>
