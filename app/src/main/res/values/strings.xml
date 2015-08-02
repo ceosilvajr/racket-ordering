@@ -29,5 +29,6 @@
     <string name="payment_message">Processing your payment.</string>
     <string name="thank_you">Successful payment. Thank you for shopping with us.</string>
     <string name="total">TOTAL</string>
+    <string name="package_name">com.ceosilvajr.app.onlineshoppingcart</string>
 
 </resources>

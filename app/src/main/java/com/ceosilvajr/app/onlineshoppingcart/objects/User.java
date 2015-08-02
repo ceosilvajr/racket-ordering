@@ -5,23 +5,33 @@ package com.ceosilvajr.app.onlineshoppingcart.objects;
  */
 public class User {
 
-    String name;
+    private String username;
 
-    int imageDrawable;
+    private String email;
 
-    public String getName() {
-        return name;
+    private String password;
+
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String name) {
+        this.username = name;
     }
 
-    public int getImageDrawable() {
-        return imageDrawable;
+    public String getEmail() {
+        return email;
     }
 
-    public void setImageDrawable(int imageDrawable) {
-        this.imageDrawable = imageDrawable;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
