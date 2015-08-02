@@ -6,9 +6,17 @@
     <string name="my_photos">My Photo</string>
     <string name="my_name">My Name</string>
 
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="title_activity_item_list">ItemListActivity</string>
-    <string name="title_activity_item_details">ItemDetailsActivity</string>
-    <string name="title_activity_checkout">CheckoutActivity</string>
-    
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="need_acc_reg">Need account? REGISTER</string>
+    <string name="register">REGISTER</string>
+
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_item_list">Home</string>
+    <string name="title_activity_item_details">Product Details</string>
+    <string name="title_activity_checkout">Checkout</string>
+    <string name="title_activity_registration">Register</string>
+    <string name="username">Username</string>
+
 </resources>

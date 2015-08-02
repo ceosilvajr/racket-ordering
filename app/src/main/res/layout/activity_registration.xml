@@ -2,18 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/back_ground"
-    tools:context="com.ceosilvajr.app.onlineshoppingcart.LoginActivity">
+    tools:context="com.ceosilvajr.app.onlineshoppingcart.RegistrationActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg_splash_3" />
+        android:src="@drawable/bg_splash_2" />
+
+    <include layout="@layout/toolbar" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="240dp"
         android:layout_centerInParent="true"
         android:layout_margin="16dp"
         android:background="@drawable/bg_black"
@@ -22,9 +23,20 @@
         android:padding="16dp">
 
         <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/primary_text_dark"
+            android:textColorHint="@android:color/secondary_text_light"
+            tools:text="ceosilvajr" />
+
+        <EditText
             android:id="@+id/edt_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:textColor="@android:color/primary_text_dark"
@@ -43,20 +55,12 @@
             tools:text="ceosilvajr@gmail.com" />
 
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/login" />
-
-        <TextView
-            android:id="@+id/tv_register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/need_acc_reg"
-            android:textColor="@android:color/primary_text_dark"
-            android:textSize="18sp" />
-
+            android:text="@string/register" />
     </LinearLayout>
+
+
 </RelativeLayout>
