@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Lebron Shoes Online</string>
+    <string name="app_name">Lebron </string>
+    <string name="package_name">com.ceosilvajr.app.onlineshoppingcart</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -20,8 +21,8 @@
     <string name="username">Username</string>
     <string name="cart">Cart</string>
 
-    <string name="paypal">Paypal</string>
-    <string name="paypal_message">Pay using Paypal account. You will be redirected to the Paypal system to complete the payment.</string>
+    <string name="paypal">PayPal</string>
+    <string name="paypal_message">Pay using PayPal account. You will be redirected to the PayPal system to complete the payment.</string>
     <string name="credit_debit">Credit / Debit card</string>
     <string name="credi_cards">Saved Credit Card(s)</string>
     <string name="cash_delivery">Cash On Delivery</string>
@@ -29,6 +30,10 @@
     <string name="payment_message">Processing your payment.</string>
     <string name="thank_you">Successful payment. Thank you for shopping with us.</string>
     <string name="total">TOTAL</string>
-    <string name="package_name">com.ceosilvajr.app.onlineshoppingcart</string>
+
+    <string name="total_peso">TOTAL IN PESO</string>
+    <string name="add_to_bag">Add to bag</string>
+    <string name="buy">BUY</string>
+    <string name="continue_">CONTINUE</string>
 
 </resources>

@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 
 import com.ceosilvajr.app.onlineshoppingcart.R;
-import com.ceosilvajr.app.onlineshoppingcart.objects.Shoes;
 import com.ceosilvajr.app.onlineshoppingcart.objects.User;
 import com.google.gson.Gson;
 

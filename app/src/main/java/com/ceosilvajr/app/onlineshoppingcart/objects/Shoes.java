@@ -16,6 +16,53 @@ public class Shoes implements Parcelable {
 
     private int drawableImage;
 
+    public Shoes (){
+
+    }
+
+    public Shoes(String name, String description, double price, int drawableImage) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.drawableImage = drawableImage;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getDrawableImage() {
+        return drawableImage;
+    }
+
+    public void setDrawableImage(int drawableImage) {
+        this.drawableImage = drawableImage;
+    }
+
+    public static Creator<Shoes> getCREATOR() {
+        return CREATOR;
+    }
+
     protected Shoes(Parcel in) {
         name = in.readString();
         description = in.readString();

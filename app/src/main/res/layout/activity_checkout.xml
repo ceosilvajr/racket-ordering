@@ -11,6 +11,7 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="1">
 
         <LinearLayout
@@ -161,11 +162,37 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@android:color/secondary_text_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="@string/total"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:textColor="@android:color/primary_text_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
         <Button
             android:id="@+id/btn_continue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CONTINUE"
+            android:text="@string/continue_"
             android:textColor="@android:color/primary_text_dark" />
     </LinearLayout>
 

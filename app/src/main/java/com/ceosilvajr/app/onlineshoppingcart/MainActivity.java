@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.ceosilvajr.app.onlineshoppingcart.manager.UserManager;
 import com.ceosilvajr.app.onlineshoppingcart.objects.User;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,7 +38,14 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+
+            User user = UserManager.get(MainActivity.this);
+            Intent intent = null;
+            if (user == null) {
+                intent = new Intent(MainActivity.this, LoginActivity.class);
+            } else {
+                intent = new Intent(MainActivity.this, ItemListActivity.class);
+            }
             startActivity(intent);
             finish();
         }

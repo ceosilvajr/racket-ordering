@@ -26,7 +26,7 @@
             android:padding="16dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical">
@@ -37,16 +37,18 @@
                     android:src="@drawable/ic_avatar" />
 
                 <TextView
+                    android:id="@+id/txt_username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ceosilvajr"
+                    android:singleLine="true"
                     android:textColor="@android:color/primary_text_dark"
                     android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/txt_user_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ceosilvajr@gmail.com"
+                    android:singleLine="true"
                     android:textColor="@android:color/secondary_text_dark"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -60,16 +62,16 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/txt_total_peso"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="35,000.00"
                     android:textColor="@android:color/primary_text_dark"
                     android:textSize="24sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TOTAL IN PESO"
+                    android:text="@string/total_peso"
                     android:textColor="@android:color/secondary_text_dark"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -89,16 +91,17 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/item_container_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="16dp">
 
                 <ImageView
+                    android:id="@+id/item_image_1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/img_lebron_vii" />
+                    android:scaleType="centerCrop" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -108,23 +111,23 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/item_name_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Lebron VII"
                         android:textColor="@android:color/primary_text_dark"
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/item_description_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="The Nike Air Max LeBron VII was released on October 4th, 2009 after a complete overhauling of previous Nike LeBron designs..."
                         android:textColor="@android:color/secondary_text_dark"
                         android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/item_price_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="PHP 7,000.00"
                         android:textColor="@android:color/primary_text_dark"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -138,11 +141,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Add to bag"
+                            android:text="@string/add_to_bag"
                             android:textColor="@android:color/primary_text_dark"
                             android:textSize="12sp" />
 
                         <Switch
+                            android:id="@+id/item_switch_1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -161,16 +165,17 @@
                 android:background="@color/primary_dark" />
 
             <LinearLayout
+                android:id="@+id/item_container_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="16dp">
 
                 <ImageView
+                    android:id="@+id/item_image_2"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/img_lebron_viiii" />
+                    android:scaleType="centerCrop" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -180,23 +185,23 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/item_name_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Lebron VIIII"
                         android:textColor="@android:color/primary_text_dark"
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/item_description_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="The Nike LeBron 9 Swin Cash PE takes on a blue base, brightened up by bright yellow accents and midsole speckling. This player exclusive sports Chicago Sky team..."
                         android:textColor="@android:color/secondary_text_dark"
                         android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/item_price_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="PHP 10,000.00"
                         android:textColor="@android:color/primary_text_dark"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -210,11 +215,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Add to bag"
+                            android:text="@string/add_to_bag"
                             android:textColor="@android:color/primary_text_dark"
                             android:textSize="12sp" />
 
                         <Switch
+                            android:id="@+id/item_switch_2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -233,16 +239,17 @@
                 android:background="@color/primary_dark" />
 
             <LinearLayout
+                android:id="@+id/item_container_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="16dp">
 
                 <ImageView
+                    android:id="@+id/item_image_3"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/img_lebron_x" />
+                    android:scaleType="centerCrop" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -252,23 +259,23 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/item_name_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Lebron X"
                         android:textColor="@android:color/primary_text_dark"
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/item_description_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Forged by time, heat and pressure, the diamond inspires LeBron James' tenth Nike signature shoe..."
                         android:textColor="@android:color/secondary_text_dark"
                         android:textSize="12sp" />
 
                     <TextView
+                        android:id="@+id/item_price_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="PHP 20,000.00"
                         android:textColor="@android:color/primary_text_dark"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -282,11 +289,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Add to bag"
+                            android:text="@string/add_to_bag"
                             android:textColor="@android:color/primary_text_dark"
                             android:textSize="12sp" />
 
                         <Switch
+                            android:id="@+id/item_switch_3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
