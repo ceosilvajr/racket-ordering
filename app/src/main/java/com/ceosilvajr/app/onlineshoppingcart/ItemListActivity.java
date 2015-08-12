@@ -25,7 +25,9 @@ import com.ceosilvajr.app.onlineshoppingcart.utils.NumberFormaterUtil;
 public class ItemListActivity extends AppCompatActivity {
 
     private TextView mTVTotalPrice;
+
     private double mTotalPrice = 0.0;
+
     private Context mContext;
 
     @Override
@@ -35,20 +37,31 @@ public class ItemListActivity extends AppCompatActivity {
 
         mContext = this;
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        toolbar.inflateMenu(R.menu.menu_item_list);
-
+        setToolBar();
         initViews();
     }
 
+    /**
+     * Set Toolbar
+     *
+     * */
+    private void setToolBar (){
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.inflateMenu(R.menu.menu_item_list);
+    }
+
+    /**
+     * Set Views
+     *
+     * */
     private void initViews() {
 
         mTVTotalPrice = (TextView) findViewById(R.id.txt_total_peso);
         mTVTotalPrice.setText("PHP 0.00");
 
         User user = UserManager.get(this);
+
         TextView tvUserName = (TextView) findViewById(R.id.txt_username);
         TextView tvEmail = (TextView) findViewById(R.id.txt_user_email);
         tvUserName.setText(user.getUsername());

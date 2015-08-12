@@ -46,11 +46,14 @@ public class ItemDetailsActivity extends AppCompatActivity {
     }
 
     private void initView() {
+
         final Shoes shoes = getIntent().getExtras().getParcelable("shoes");
+
         if (shoes == null) {
             Toast.makeText(mContext, "Sorry Item not found", Toast.LENGTH_LONG).show();
             finish();
         }
+
         ImageView ivItemImage = (ImageView) findViewById(R.id.iv_item_image);
         TextView tvItemPrice = (TextView) findViewById(R.id.tv_item_price);
         TextView tvItemName = (TextView) findViewById(R.id.tv_item_name);
@@ -70,6 +73,7 @@ public class ItemDetailsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
     private View.OnClickListener mToolbarBackClicked = new View.OnClickListener() {

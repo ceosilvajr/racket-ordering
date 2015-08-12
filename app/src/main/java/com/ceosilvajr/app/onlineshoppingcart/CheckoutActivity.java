@@ -52,7 +52,6 @@ public class CheckoutActivity extends AppCompatActivity {
         initView();
     }
 
-
     private void initView() {
         Button btnContinue = (Button) findViewById(R.id.btn_continue);
         btnContinue.setOnClickListener(onBuyBtnClicked);

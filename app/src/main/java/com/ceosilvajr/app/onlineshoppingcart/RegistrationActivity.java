@@ -58,9 +58,11 @@ public class RegistrationActivity extends AppCompatActivity {
     private View.OnClickListener mBtnRegisterClicked = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+
             String username = mEdtUsername.getText().toString();
             String email = mEdtEmail.getText().toString();
             String password = mEdtPassword.getText().toString();
+
             if (username.isEmpty()) {
                 mEdtUsername.setError("Please enter Username");
                 return;
@@ -73,9 +75,12 @@ public class RegistrationActivity extends AppCompatActivity {
                 mEdtPassword.setError("Please enter Password");
                 return;
             }
+
             User user = new User(username, email, password);
+
             RegisterTask registerTask = new RegisterTask(user);
             registerTask.execute();
+
         }
     };
 
@@ -116,6 +121,7 @@ public class RegistrationActivity extends AppCompatActivity {
             UserManager.save(mUser, mContext);
 
             popAlert("Successful registration you can now login with your account.");
+
         }
     }
 

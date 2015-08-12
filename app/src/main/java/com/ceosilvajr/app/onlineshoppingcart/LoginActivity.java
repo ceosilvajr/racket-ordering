@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
     private View.OnClickListener mTVRegisterClicked = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(LoginActivity.this, RegistrationActivity.class);
+            Intent intent = new Intent(mContext, RegistrationActivity.class);
             startActivity(intent);
         }
     };
